@@ -4,16 +4,17 @@ const pront = PromptSync()
 let nome_produto =(pront('Digite o nome do Produto: '))
 
 let preco_produto= Number (pront('Digite o valor do Produto:'))
- if(preco_produto<=0){
+
+if(preco_produto<=0){
     console.log('O valor do produto precisa ser maior que 0(ZERO)')
-    process.exit()
+    
  }
 
 let descont_produto_cliente= Number(pront('Digite o desconto do Produto'))
 let valor_desconto = (preco_produto*descont_produto_cliente)/100
 if(valor_desconto<0 || descont_produto_cliente>100){
     console.log('Desconto precisa ser entre 0 e 100% ')
-     process.exit()
+     
    }
 
 let preco_final = preco_produto -valor_desconto
