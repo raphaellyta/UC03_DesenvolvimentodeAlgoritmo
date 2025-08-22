@@ -1,0 +1,23 @@
+{
+  "name": "uc03_desenvolvimentodealgoritmo",
+  "version": "1.0.0",
+  "description": "Unidade Curricular 03 - Desenvolvimento de Algoritmo ( Curso Tecnico de Desenvolvimento de Sistema)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaellyta/UC03_DesenvolvimentodeAlgoritmo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaellyta/UC03_DesenvolvimentodeAlgoritmo/issues"
+  },
+  "homepage": "https://github.com/raphaellyta/UC03_DesenvolvimentodeAlgoritmo#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
