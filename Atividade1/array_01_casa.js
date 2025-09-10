@@ -8,11 +8,10 @@ let palavras = texto.split(" ")
 let contador= 0
 let verificando_palavras = 0
 
-
 for(let i = 0; i< palavras.length;i++){
-    palavras[i] = palavras[i].toLowerCase()
+    let palavras = palavras[i].toLowerCase()
 
-    if(ofensiva.includes(palavras[i])){
+    if(ofensiva.includes(palavras)){
       palavras[i]= "****"
       contador++
     }
