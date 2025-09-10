@@ -18,6 +18,11 @@ while(true){
 
 } console.log(`Total da Compra foi ${soma}`)
 
+let pagamento = parseFloat(prompt(`Digite o valor pago pelo cliente`))
+let troco = pagamento - soma
+
+console.log(`O valor pago foi ${pagamento.toFixed(2)} | Troco de : ${troco.toFixed(2)} e a quantidade de produtos : ${num_mercadorias}`)
+
 
 
 
