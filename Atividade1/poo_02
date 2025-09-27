@@ -41,13 +41,24 @@ export class ContaBancaria{
 
     sacar(valor){
         if(valor>0){
-
-                }
-
-    }
+            this.saldo-=valor
+            console.log(`O valor Sacado: ${valor}`)
+                }else{
+                console.log(`a saldo suficiente`)
+                }    }
    
 
     depositar(valor){
+        if(valor>0){
+            this.#saldo +=valor
+            console.log(`O seu novo saldo ${valor}`)
+                             
+
+        }else{
+
+            console.log(`Valor Maior que o saldo`);
+            
+        }
 
     }
 
@@ -57,7 +68,9 @@ export class ContaBancaria{
 
     
  imprimir(){
-   // console.log(`${this.#nome}, ${this.#endereco},${this.#renda}`)
+   
+
+   console.log(`Cliente: ${this.#nomeTitular}\t\tAgencia: ${this.numeroAgencia} - Conta: ${this.numeroConta}.`)
  }
 
 
