@@ -20,6 +20,5 @@
   "homepage": "https://github.com/raphaellyta/UC03_DesenvolvimentodeAlgoritmo#readme",
   "dependencies": {
     "prompt-sync": "^4.2.0"
-  },
-  "devDependencies": {}
+  }
 }
