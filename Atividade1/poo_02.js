@@ -2,11 +2,21 @@
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
 
+
+
+export class TesteErro extends Error{
+    constructor(message){
+        super(message)
+    }
+
+}
+
+
 export class ContaBancaria{
     #nomeTitular 
     numeroConta  
     numeroAgencia
-  #saldo = 0
+     #saldo = 0
     dataAbertura
 
 
@@ -44,8 +54,9 @@ export class ContaBancaria{
             this.saldo-=valor
             console.log(`O valor Sacado: ${valor}`)
                 }else{
-                console.log(`a saldo suficiente`)
-                }    }
+                    throw new TesteErro (`Saldo Insuficiente `)
+                }    
+            }
    
 
     depositar(valor){
@@ -56,7 +67,8 @@ export class ContaBancaria{
 
         }else{
 
-            console.log(`Valor Maior que o saldo`);
+            
+            throw new TesteErro (`Valor Maior que Saldo `)
             
         }
 
