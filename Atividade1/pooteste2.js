@@ -4,19 +4,20 @@ const prompt = PromptSync()
 
 
 let clin1 = new ContaBancaria()
-// clin1.nomeTitular = (prompt("Digite o nome: "))
-// clin1.numeroAgencia = (prompt("Digite o numero de sua agencia:"))
-// clin1.numeroConta= prompt("Digite o numero de sua conta ")
-clin1.depositar(prompt(`Digite o valor que vai deposição`))
-
+clin1.nomeTitular = (prompt("Digite o nome: "))
+clin1.numeroAgencia = (prompt("Digite o numero de sua agencia:"))
+clin1.numeroConta= prompt("Digite o numero de sua conta ")
+try{
+    clin1.depositar(prompt(`Digite o valor que vai deposição`))
+}catch(error){ // captura da exceção
+    console.error(error.message) // tratamento da exceção gerada
+}
 try{ // geração
     clin1.sacar(Number (prompt(`Digite o valor que vai  Sacar`)))
 
 }catch(error){ // captura da exceção
     console.error(error.message) // tratamento da exceção gerada
 }
-
-
 clin1.imprimir()
 
 

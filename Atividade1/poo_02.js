@@ -50,7 +50,7 @@ export class ContaBancaria{
 
 
     sacar(valor){
-        if(valor>0){
+        if(valor<this.saldo){
             this.saldo-=valor
             console.log(`O valor Sacado: ${valor}`)
                 }else{
@@ -68,7 +68,7 @@ export class ContaBancaria{
         }else{
 
             
-            throw new TesteErro (`Valor Maior que Saldo `)
+            throw new TesteErro (`Valor negativo `)
             
         }
 
